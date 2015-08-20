@@ -10,6 +10,12 @@ lightTips is a jQuery plugin of applied to any element of portable prompts.
 
 ## Usage
 
+html code:
+
+```
+<div class="test" data-light-tips-content="hello!" data-light-tips-image="images/test.jpg">I am a Tip plugins</div>
+```
+
 Link to the **jQuery.js** file:
 
 ```
