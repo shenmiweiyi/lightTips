@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ligthTips Plugin</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightTips.css">
+	<style type="text/css">
+		*{margin: 0; padding: 0; border: 0;}
+		.tbox{ width: 300px; border: 1px solid #ccc; height: 35px; line-height: 35px; margin:40px; clear: both;}
+		.test{width: 200px; height: 40px; text-align: center; line-height: 40px; margin: 50px; background: #f6f6f6; border: 1px solid #ccc;}
+	</style>
+</head>
+<body>
+<div><input id="username" class="tbox" type="text" placeholder="user name" value="" data-light-tips-content="至少6位中文、英文和数字组合"></div>
+<div><input id="password" class="tbox" type="password" placeholder="password" value="" data-light-tips-content="6-16个英文字母、数字和特殊符号"></div>
+<div class="test" data-light-tips-content="hello!" data-light-tips-image="images/test.jpg">I am a Tip plugins</div>
+<div class="test" data-light-tips-content="world!" data-light-tips-image="images/test.jpg">I am a lightTip plugins</div>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.lightTips.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.tbox').lightTips({
+			opacity: .8,
+			trigger: 'click',
+			position: 'right',
+			background: '#66be8c'
+		})
+		$('.test').lightTips({
+			opacity: .5,
+			trigger: 'hover',
+			position: 'top'
+		})
+	})
+</script>
+</body>
+</html>
